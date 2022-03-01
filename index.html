@@ -1,0 +1,19 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>WDIO iframe</title>
+  </head>
+  <body>
+
+    <button id="hide" onclick="hide()">Hide iframe</button>
+
+    <div id="frame"><iframe id="frame" src="./pdf-src.pdf" width="500" height="500"></iframe></div>
+
+    <script>
+      function hide() {
+        document.querySelector('#frame').innerHTML = '';
+      }
+    </script>
+  </body>
+</html>
+
